@@ -8,7 +8,7 @@ import os
 import sys
 from pathlib import Path
 
-sys.path.append(Path(__file__).parents[1])
+sys.path.append(Path(__file__).parents[2])
 
 from utils.utils_fonts_colours import *
 from utils.utils_iod_values import *
