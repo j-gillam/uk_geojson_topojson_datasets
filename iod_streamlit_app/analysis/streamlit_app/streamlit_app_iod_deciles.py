@@ -2,14 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
 import altair as alt
-from utils.utils_fonts_colours import *
-from utils.utils_iod_values import *
 from PIL import Image
-from getters.clean_la_iod_data_2019 import get_la_iod_2019
-from getters.clean_lsoa_iod_data_2019 import get_lsoa_iod_2019
-from getters.la_shapefiles_2019 import get_la_shapefiles_2019
-from getters.lsoa_shapefiles_2011 import get_lsoa_shapefiles_2011
-from utils.utils_preprocessing import preprocess_strings
 import geopandas as gd
 import os
 import sys
@@ -17,6 +10,13 @@ from pathlib import Path
 
 sys.path.append(Path(__file__).parents[1])
 
+from utils.utils_fonts_colours import *
+from utils.utils_iod_values import *
+from getters.clean_la_iod_data_2019 import get_la_iod_2019
+from getters.clean_lsoa_iod_data_2019 import get_lsoa_iod_2019
+from getters.la_shapefiles_2019 import get_la_shapefiles_2019
+from getters.lsoa_shapefiles_2011 import get_lsoa_shapefiles_2011
+from utils.utils_preprocessing import preprocess_strings
 
 @st.cache
 def convert_df(df):
