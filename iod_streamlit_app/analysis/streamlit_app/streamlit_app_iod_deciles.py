@@ -12,6 +12,10 @@ from getters.lsoa_shapefiles_2011 import get_lsoa_shapefiles_2011
 from utils.utils_preprocessing import preprocess_strings
 import geopandas as gd
 import os
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).parents[1])
 
 
 @st.cache
